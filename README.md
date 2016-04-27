@@ -18,4 +18,4 @@ CONTRIBUTORS
 Thus far there have been no contributors to my project.
 
 OPEN ISSUES/BUGS
-I have not yet seen a bug on my program, but there are several additional functions that can be created to add to the functionality of this program. For example, a function that alphabetizes all the words, or a function that returns the shortest/longest word of a letter.
+I have not yet seen a bug on my program, but there are several additional functions that can be created to add to the functionality of this program. For example, a function that alphabetizes all the words, or a function that returns the shortest/longest word of a letter. Another very helpful addition to this project would be freeing the memory of all of the DicitonaryWords elements created. It would make the process more effecient.
