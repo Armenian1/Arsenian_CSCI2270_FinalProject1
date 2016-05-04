@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
+#include <algorithm>
 #include "Dictionary.h"
 
 using namespace std;
@@ -33,11 +34,13 @@ int main()
         {
             case 1: cout<<"Enter word:"<<endl;
                     getline (cin,word);
+                    transform(word.begin(), word.end(),word.begin(), ::tolower);
                     words.insertWord(word);
                     break;
 
             case 2: cout<<"Enter word:"<<endl;
                     getline (cin,word);
+                    transform(word.begin(), word.end(),word.begin(), ::tolower);
                     cout<<"Enter definition:"<<endl;
                     getline (cin,definition);
                     words.defineWord(word,definition);
@@ -45,11 +48,13 @@ int main()
 
             case 3: cout<<"Enter word:"<<endl;
                     getline (cin,word);
+                    transform(word.begin(), word.end(),word.begin(), ::tolower);
                     words.deleteWord(word);
                     break;
 
             case 4: cout<<"Enter word:"<<endl;
                     getline (cin,word);
+                    transform(word.begin(), word.end(),word.begin(), ::tolower);
                     words.findDefinition(word);
                     break;
 
@@ -58,6 +63,7 @@ int main()
 
             case 6: cout<<"Enter words separated by commas:"<<endl;
                     getline (cin,word);
+                    transform(word.begin(), word.end(),word.begin(), ::tolower);
                     words.insertSeveralWords(word);
                     break;
 
@@ -66,6 +72,7 @@ int main()
 
             case 8: cout<<"Enter letter:"<<endl;
                     getline (cin,word);
+                    transform(word.begin(), word.end(),word.begin(), ::tolower);
                     words.totalWordCountLetter(word);
                     break;
 
@@ -74,6 +81,7 @@ int main()
 
             case 10: cout<<"Enter letter:"<<endl;
                     getline (cin,word);
+                    transform(word.begin(), word.end(),word.begin(), ::tolower);
                     words.allWordDeleteLetter(word);
                     break;
 
